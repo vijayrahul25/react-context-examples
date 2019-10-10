@@ -8,15 +8,15 @@ class CounterDisplay extends React.Component {
             <div className="display" >
                 <CounterContext.Consumer>
                     {
-                        ({ CounterContext }) => {
+                        ({ CounterState }) => {
                             return (
                                 <>
-                                    <h1>Counter - {CounterContext.counter} </h1>
+                                    <h1>Counter - {CounterState.counter} </h1>
                                     <button className="btn-increment"
-                                        onClick={CounterContext.incrementCount}
+                                        onClick={CounterState.incrementCount}
                                     >Increment</button>
                                     <button className="btn-decrement"
-                                        onClick={CounterContext.decrementCount}
+                                        onClick={CounterState.decrementCount}
                                     >Decrement</button>
                                 </>
                             )

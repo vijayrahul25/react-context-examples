@@ -28,7 +28,7 @@ class App extends React.Component {
     return (
       <div className="App" >
         <CounterContext.Provider value={{
-          CounterContext: {
+          CounterState: {
             ...this.state,
             incrementCount: this.incrementCount,
             decrementCount: this.decrementCount
